@@ -1,0 +1,15 @@
+.footer{
+    background-color: black;
+    min-height: 50px;
+    color: snow;
+    justify-content: right;
+    padding-left: 20px;
+}
+.outlet{
+    width: 95%;
+    margin: 0 auto;
+    height: calc(100vh - 120px);
+    overflow: hidden;
+    overflow-y: auto;
+    display: flex;
+}
