@@ -1,0 +1,6 @@
+.usersWrap{
+    display: flex;
+}
+.user{
+    padding-right: 200px;
+}
