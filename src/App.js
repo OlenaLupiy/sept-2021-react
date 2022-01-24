@@ -4,14 +4,13 @@ import {useState} from "react";
 
 export default function App(){
     const [car, setCar] = useState({});
+    const [carForUpdate, setCarForUpdate] = useState({});
 
-    // const update = car =>{
-    //     setCar(car)
-    // }
+
     return (
         <div>
-            <Form update={setCar()}/>
-            <Cars car={car}/>
+            <Form update={setCar} carForUpdate={carForUpdate}/>
+            <Cars trigger={car} update={setCar} setCarForUpdate={setCarForUpdate}/>
         </div>
     )
 }
