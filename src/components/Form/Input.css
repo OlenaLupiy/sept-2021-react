@@ -1,0 +1,23 @@
+.input{
+    height: 50px;
+    width: 400px;
+    border-radius: 12px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button {
+
+    background-color: silver;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    width: 60px;
+
+}
+input{
+   border: none;
+    background: none;
+    margin-right: 120px;
+}
