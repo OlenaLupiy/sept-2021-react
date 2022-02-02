@@ -1,33 +1,23 @@
-import React, {useState} from 'react';
-
+import React from 'react';
+import {useDispatch} from "react-redux";
 import {saveTodo} from "../../store";
 
-import {useDispatch} from "react-redux";
-
-
 const Form = () => {
-    const [input, setInput] = useState('');
     const dispatch = useDispatch();
 
-    const inputHandler = (e) => {
-      setInput(e.target.value)
-    }
-    const addTodo = () => {
-        dispatch(saveTodo({
-            id:new Date().getTime(),
-            item: input,
-            done:false
-
-        }))
-
+    const submit = (e) => {
+        e.preventDefault();
+        dispatch(saveTodo({todo:e.target.todo.value}))
+        e.target.reset()
     }
     return (
-        <div className={'input'}>
-            <input type="text" value={input} onChange={inputHandler}/>
-            <button onClick={addTodo}>Add</button>
-
+        <div>
+            <form onSubmit={submit}>
+                <input type="text" name={'todo'}/>
+                <button>Add</button>
+            </form>
         </div>
     );
 };
 
-export {Form};
+export  {Form};

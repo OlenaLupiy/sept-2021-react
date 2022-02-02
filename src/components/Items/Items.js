@@ -1,11 +1,11 @@
 import React from 'react';
 import {useSelector} from "react-redux";
-import todoReducer from "../../store/todo.slise";
+
 import {Item} from "../Item/Item";
 
 const Items = () => {
 
-const {todoList} = useSelector(state => state[todoReducer]);
+const {todoList} = useSelector(state => state['todo']);
 
 return (
         <div>
