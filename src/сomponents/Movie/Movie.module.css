@@ -1,0 +1,28 @@
+.img{
+    height: 220px;
+    width: 150px;
+}
+.wrap{
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+    color: #042541;
+    margin-bottom: 10px;
+
+}
+.wrap a{
+    box-sizing: border-box;
+
+    text-align: center;
+    width: 20%;
+    color: red;
+}
+.movie{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    width: 28%;
+
+
+}
