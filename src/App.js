@@ -1,6 +1,6 @@
-import {Route, Routes} from 'react-router-dom'
+import {Route, Routes, Navigate} from 'react-router-dom'
 import {Layout} from "./сomponents";
-import {GenreMoviePage, GenrePage, MovieDetailsPage, MoviesPage, NotFoundPage} from "./pages";
+import {GenresPage, MovieDetailsPage, MoviesPage, NotFoundPage} from "./pages";
 
 export default function App() {
 
@@ -8,12 +8,10 @@ export default function App() {
         <div>
             <Routes>
                 <Route path={'/'} element={<Layout/>}>
-                    <Route path={'movies'} element={<MoviesPage/>}>
-                        <Route path={':id'} element={<MovieDetailsPage/>}/>
-                    </Route>
-                    <Route path={'genre'} element={<GenrePage/>}>
-                        <Route path={':id'} element={<GenreMoviePage/>}/>
-                    </Route>
+                    <Route index element={<Navigate to={'movies'}/>}/>
+                    <Route path={'movies'} element={<MoviesPage/>}/>
+                    <Route path={'movies/:id'} element={<MovieDetailsPage/>}/>
+                    <Route path={'genres'} element={<GenresPage/>}/>
                     <Route path={'*'} element={<NotFoundPage/>}/>
                 </Route>
             </Routes>
