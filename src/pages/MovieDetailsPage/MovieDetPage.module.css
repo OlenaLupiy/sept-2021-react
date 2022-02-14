@@ -1,0 +1,13 @@
+.movie {
+    height: calc(100vh - 80px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie > h2 {
+    max-width: 90%;
+    min-width: 500px;
+}

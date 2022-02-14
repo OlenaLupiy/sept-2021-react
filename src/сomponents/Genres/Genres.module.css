@@ -1,0 +1,11 @@
+.genres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.genre {
+    margin: 10px;
+    min-width: 60px;
+    min-height: 40px;
+}

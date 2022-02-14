@@ -1,6 +1,6 @@
 export * from './Movies/Movies'
-export * from './Movie/Movie'
 export * from './Layout/Layout'
 export * from './Hearder/Header'
 export * from './Footer/Footer'
 export * from './Genres/Genres'
+export * from './PagesComponent/PagesComponent'

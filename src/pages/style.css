@@ -1,0 +1,23 @@
+.currentPageNumber, .notCurrentPageNumber {
+    padding: 1%;
+}
+
+.currentPageNumber {
+    border: 4px rgb(2, 143, 187) double;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.notCurrentPageNumber:hover {
+    font-weight: bold;
+    border-radius: 4px;
+    color: orangered;
+}
+.page {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 3% 1%;
+    padding: 2% 1%;
+}
